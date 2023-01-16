@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./todolist-task.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+    <div class="header">
+    <h2>Create a Task </h2>
+    <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+    <input type="date" class="date" name="date" id="date">
+   
+    <input type="hidden" id="saveindex">
+              
+    <button type="button"   id="addtaskbtn">Add Task</button>
+    <button type="button" id="savetaskbtn" style="display: none;">Save Task</button></div><br><br>
+
+
+
+    <h2>Tasks</h2>
+    <input type="button" class="active" id="all_tasks" value="ALL Tasks"/>
+    <input type="button" class="active" id="pending_tasks" value="Pending Tasks"/>
+    <input type="button" class="active" id="completed_tasks" value="Completed Tasks"/>
+  
+    <div class="placing"> </div>
+
+
+    <div class="to-do-output">
+    <table class="todo-list" id="addedtasklist">   
+
+    </table>
+    
+    </div>
+<script src="./todolist-task.js"></script>
+</body>
+
+</html>
